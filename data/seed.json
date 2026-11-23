@@ -1,0 +1,277 @@
+{
+ "items": [
+  {
+   "id": "I1",
+   "sku": "LAP-001",
+   "name": "Aero 14 Laptop",
+   "category": "Computers",
+   "qty": 24,
+   "min": 10,
+   "price": 58000,
+   "cost": 46000,
+   "godown": "Godown A"
+  },
+  {
+   "id": "I2",
+   "sku": "MON-027",
+   "name": "27in 4K Monitor",
+   "category": "Computers",
+   "qty": 6,
+   "min": 8,
+   "price": 24500,
+   "cost": 18900,
+   "godown": "Godown A"
+  },
+  {
+   "id": "I3",
+   "sku": "KEY-310",
+   "name": "Mechanical Keyboard",
+   "category": "Accessories",
+   "qty": 58,
+   "min": 20,
+   "price": 4200,
+   "cost": 2600,
+   "godown": "Godown B"
+  },
+  {
+   "id": "I4",
+   "sku": "MOU-120",
+   "name": "Wireless Mouse",
+   "category": "Accessories",
+   "qty": 0,
+   "min": 25,
+   "price": 1500,
+   "cost": 820,
+   "godown": "Godown B"
+  },
+  {
+   "id": "I5",
+   "sku": "HUB-070",
+   "name": "USB-C Dock",
+   "category": "Accessories",
+   "qty": 14,
+   "min": 12,
+   "price": 7800,
+   "cost": 5400,
+   "godown": "Godown B"
+  },
+  {
+   "id": "I6",
+   "sku": "PRN-440",
+   "name": "Laser Printer",
+   "category": "Office",
+   "qty": 9,
+   "min": 5,
+   "price": 16900,
+   "cost": 12100,
+   "godown": "Godown C"
+  },
+  {
+   "id": "I7",
+   "sku": "CHR-902",
+   "name": "Ergonomic Chair",
+   "category": "Furniture",
+   "qty": 4,
+   "min": 6,
+   "price": 13200,
+   "cost": 8700,
+   "godown": "Godown C"
+  },
+  {
+   "id": "I8",
+   "sku": "DSK-210",
+   "name": "Standing Desk",
+   "category": "Furniture",
+   "qty": 18,
+   "min": 6,
+   "price": 21000,
+   "cost": 14800,
+   "godown": "Godown C"
+  }
+ ],
+ "sales": [
+  {
+   "id": "INV-1001",
+   "date": "2026-11-15",
+   "customer": "Nimbus Tech",
+   "status": "Paid",
+   "lines": [
+    {
+     "itemId": "I1",
+     "qty": 4,
+     "price": 58000
+    }
+   ]
+  },
+  {
+   "id": "INV-1002",
+   "date": "2026-11-19",
+   "customer": "Orbit Studios",
+   "status": "Pending",
+   "lines": [
+    {
+     "itemId": "I3",
+     "qty": 10,
+     "price": 4200
+    },
+    {
+     "itemId": "I4",
+     "qty": 15,
+     "price": 1500
+    }
+   ]
+  },
+  {
+   "id": "INV-1003",
+   "date": "2026-11-21",
+   "customer": "Helix Labs",
+   "status": "Pending",
+   "lines": [
+    {
+     "itemId": "I7",
+     "qty": 3,
+     "price": 13200
+    }
+   ]
+  }
+ ],
+ "purchases": [
+  {
+   "id": "PO-2001",
+   "date": "2026-11-10",
+   "supplier": "Zenith Distributors",
+   "status": "Received",
+   "lines": [
+    {
+     "itemId": "I1",
+     "qty": 10,
+     "price": 46000
+    }
+   ]
+  },
+  {
+   "id": "PO-2002",
+   "date": "2026-11-20",
+   "supplier": "Pixel Wholesale",
+   "status": "Pending",
+   "lines": [
+    {
+     "itemId": "I2",
+     "qty": 12,
+     "price": 18900
+    }
+   ]
+  },
+  {
+   "id": "PO-2003",
+   "date": "2026-11-22",
+   "supplier": "Zenith Distributors",
+   "status": "Pending",
+   "lines": [
+    {
+     "itemId": "I4",
+     "qty": 40,
+     "price": 820
+    }
+   ]
+  }
+ ],
+ "history": [
+  {
+   "id": "H1",
+   "date": "2026-11-21",
+   "itemId": "I7",
+   "type": "OUT",
+   "qty": 3,
+   "ref": "INV-1003"
+  },
+  {
+   "id": "H2",
+   "date": "2026-11-19",
+   "itemId": "I4",
+   "type": "OUT",
+   "qty": 15,
+   "ref": "INV-1002"
+  },
+  {
+   "id": "H3",
+   "date": "2026-11-19",
+   "itemId": "I3",
+   "type": "OUT",
+   "qty": 10,
+   "ref": "INV-1002"
+  },
+  {
+   "id": "H4",
+   "date": "2026-11-15",
+   "itemId": "I1",
+   "type": "OUT",
+   "qty": 4,
+   "ref": "INV-1001"
+  },
+  {
+   "id": "H5",
+   "date": "2026-11-10",
+   "itemId": "I1",
+   "type": "IN",
+   "qty": 10,
+   "ref": "PO-2001"
+  }
+ ],
+ "customers": [
+  {
+   "id": "C1",
+   "name": "Nimbus Tech",
+   "city": "Hyderabad",
+   "phone": "98480 11122"
+  },
+  {
+   "id": "C2",
+   "name": "Orbit Studios",
+   "city": "Bengaluru",
+   "phone": "98450 33445"
+  },
+  {
+   "id": "C3",
+   "name": "Helix Labs",
+   "city": "Chennai",
+   "phone": "99400 55667"
+  },
+  {
+   "id": "C4",
+   "name": "Vertex Retail",
+   "city": "Pune",
+   "phone": "98220 77889"
+  }
+ ],
+ "suppliers": [
+  {
+   "id": "S1",
+   "name": "Zenith Distributors",
+   "city": "Mumbai",
+   "phone": "98200 41414"
+  },
+  {
+   "id": "S2",
+   "name": "Pixel Wholesale",
+   "city": "Delhi",
+   "phone": "98110 52525"
+  },
+  {
+   "id": "S3",
+   "name": "Apex Imports",
+   "city": "Chennai",
+   "phone": "99410 63636"
+  }
+ ],
+ "transfers": [
+  {
+   "id": "TRF-3001",
+   "date": "2026-11-12",
+   "name": "Mechanical Keyboard",
+   "from": "Godown A",
+   "to": "Godown B",
+   "qty": 20
+  }
+ ]
+}
